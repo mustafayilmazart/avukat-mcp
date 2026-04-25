@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "ad": "Türkiye E-Ticaret Mevzuatı",
+    "aciklama": "6563 sayılı E-Ticaret Kanunu, 6502 sayılı TKHK ve ilgili yönetmelikler",
+    "ulke": "TR",
+    "mevzuat": "6563 sayılı Elektronik Ticaretin Düzenlenmesi Hakkında Kanun + 6502 sayılı TKHK",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "ETIC-001",
+      "baslik": "Mesafeli Satış Sözleşmesi",
+      "seviye": "kritik",
+      "aciklama": "E-ticaret sitelerinde mesafeli satış sözleşmesi tüketiciye gösterilmeli ve onayı alınmalıdır.",
+      "kontrol_desenleri": [
+        "mesafeli satis",
+        "distance selling",
+        "satis sozlesmesi"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.jsx"],
+      "mevzuat_referans": "6502/md.48 + Mesafeli Sözleşmeler Yönetmeliği md.6",
+      "duzeltme_onerisi": "Checkout sürecine mesafeli satış sözleşmesi onay adımı ekleyin."
+    },
+    {
+      "id": "ETIC-002",
+      "baslik": "Ön Bilgilendirme Formu",
+      "seviye": "kritik",
+      "aciklama": "Satın alma öncesinde tüketiciye ön bilgilendirme formu sunulmalıdır.",
+      "kontrol_desenleri": ["on bilgilendirme", "preliminary information"],
+      "dosya_desenleri": ["*.html", "*.tsx"],
+      "mevzuat_referans": "Mesafeli Sözleşmeler Yönetmeliği md.5",
+      "duzeltme_onerisi": "Ödeme sayfasına ön bilgilendirme formu ekleyin."
+    },
+    {
+      "id": "ETIC-003",
+      "baslik": "14 Gün Cayma Hakkı",
+      "seviye": "kritik",
+      "aciklama": "Tüketici 14 gün içinde cayma hakkını kullanabilir. Bu bilgi açıkça belirtilmelidir.",
+      "kontrol_desenleri": [
+        "cayma hakki",
+        "iade",
+        "return",
+        "refund",
+        "14 gün"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.md"],
+      "mevzuat_referans": "6502/md.48/4 + Mesafeli Sözleşmeler Yönetmeliği md.9-15",
+      "duzeltme_onerisi": "İade politikası sayfası oluşturun. 14 gün cayma hakkı ve istisnalarını açıklayın."
+    },
+    {
+      "id": "ETIC-004",
+      "baslik": "ETBİS Kaydı",
+      "seviye": "yuksek",
+      "aciklama": "E-ticaret yapan tüm işletmeler ETBİS (Elektronik Ticaret Bilgi Sistemi) kaydı yaptırmalıdır.",
+      "kontrol_desenleri": ["etbis"],
+      "dosya_desenleri": ["*.md", "*.txt"],
+      "mevzuat_referans": "6563 sayılı Kanun + ETBİS Yönetmeliği",
+      "duzeltme_onerisi": "eticaret.gov.tr üzerinden ETBİS kaydı yapın."
+    },
+    {
+      "id": "ETIC-005",
+      "baslik": "Satıcı Bilgileri Zorunluluğu",
+      "seviye": "yuksek",
+      "aciklama": "E-ticaret sitesinde satıcının ad/unvan, adres, MERSİS no, KEP adresi gibi bilgileri bulunmalıdır.",
+      "kontrol_desenleri": [
+        "mersis",
+        "kep",
+        "iletisim",
+        "contact",
+        "hakkimizda",
+        "about"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.jsx"],
+      "mevzuat_referans": "6563/md.3 + Yönetmelik md.5",
+      "duzeltme_onerisi": "Site footer veya iletişim sayfasında: şirket unvanı, MERSİS no, KEP adresi, adres ve telefon bilgilerini ekleyin."
+    }
+  ]
+}

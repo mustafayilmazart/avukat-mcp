@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "ad": "Telif Hakları ve Yazılım Lisansları",
+    "aciklama": "FSEK, DMCA, GPL/MIT lisans uyumluluğu kuralları",
+    "ulke": "GLOBAL",
+    "mevzuat": "5846 sayılı FSEK + DMCA + Bern Sözleşmesi",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "TEL-001",
+      "baslik": "LICENSE Dosyası Zorunluluğu",
+      "seviye": "yuksek",
+      "aciklama": "Her yazılım projesinde lisans dosyası bulunmalıdır. Lisans belirtilmezse tüm haklar saklıdır.",
+      "kontrol_desenleri": ["LICENSE", "LICENCE", "COPYING"],
+      "dosya_desenleri": ["LICENSE*", "LICENCE*", "COPYING*"],
+      "mevzuat_referans": "5846 sayılı FSEK md.21-22 + Bern Sözleşmesi",
+      "duzeltme_onerisi": "Proje köküne LICENSE dosyası ekleyin."
+    },
+    {
+      "id": "TEL-002",
+      "baslik": "GPL Lisans Bulaşıcılığı",
+      "seviye": "kritik",
+      "aciklama": "GPL lisanslı bağımlılık kullanılıyorsa projeniz de GPL olmalıdır. Kapalı kaynak projeler için risk.",
+      "kontrol_desenleri": ["GPL", "gpl-2.0", "gpl-3.0", "AGPL"],
+      "dosya_desenleri": [
+        "package.json",
+        "package-lock.json",
+        "requirements.txt"
+      ],
+      "mevzuat_referans": "GNU GPL v2/v3 Lisans Koşulları",
+      "duzeltme_onerisi": "GPL bağımlılığı MIT/Apache alternatifiyle değiştirin veya projeyi GPL yapın."
+    },
+    {
+      "id": "TEL-003",
+      "baslik": "Üçüncü Parti Asset Lisansları",
+      "seviye": "orta",
+      "aciklama": "Font, görsel, ses gibi üçüncü parti içerikler için lisans kontrolü yapılmalıdır.",
+      "kontrol_desenleri": ["font", "icon", "image", "audio", "stock"],
+      "dosya_desenleri": ["*.css", "*.html", "*.json"],
+      "mevzuat_referans": "5846 sayılı FSEK md.38 + DMCA",
+      "duzeltme_onerisi": "Tüm üçüncü parti asset'lerin lisanslarını kontrol edin ve belgelendirin."
+    }
+  ]
+}

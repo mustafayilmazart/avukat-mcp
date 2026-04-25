@@ -1,0 +1,81 @@
+{
+  "mevzuat": "KVKK",
+  "tam_ad": "6698 Sayılı Kişisel Verilerin Korunması Kanunu",
+  "ulke": "TR",
+  "kurallar": [
+    {
+      "id": "KVKK-001",
+      "kategori": "acik_riza",
+      "seviye": "kritik",
+      "baslik": "Açık Rıza Mekanizması Eksik",
+      "anahtar_kelimeler": [
+        "form",
+        "input",
+        "email",
+        "phone",
+        "tel",
+        "kişisel",
+        "personal",
+        "register",
+        "signup",
+        "kayit"
+      ],
+      "dosya_uzantilari": [".html", ".js", ".ts", ".jsx", ".tsx", ".py"],
+      "aciklama": "Kişisel veri toplayan formlarda açık rıza onay kutusu (checkbox) bulunmalıdır.",
+      "mevzuat_maddesi": "6698 sayılı KVKK md.3/1-a, md.5",
+      "duzeltme": "Her kişisel veri toplama formuna 'Kişisel verilerimin işlenmesine açıkça rıza veriyorum' onay kutusu ekleyin."
+    },
+    {
+      "id": "KVKK-002",
+      "kategori": "aydinlatma_metni",
+      "seviye": "kritik",
+      "baslik": "Aydınlatma Metni / Gizlilik Politikası Eksik",
+      "anahtar_kelimeler": [
+        "privacy",
+        "gizlilik",
+        "kvkk",
+        "aydinlatma",
+        "policy"
+      ],
+      "dosya_uzantilari": [".html", ".py", ".js"],
+      "aciklama": "Web sitesinde KVKK kapsamında aydınlatma metni zorunludur.",
+      "mevzuat_maddesi": "6698 sayılı KVKK md.10",
+      "duzeltme": "Gizlilik Politikası ve KVKK Aydınlatma Metni sayfası oluşturun, footer'a link ekleyin."
+    },
+    {
+      "id": "KVKK-003",
+      "kategori": "cookie_consent",
+      "seviye": "kritik",
+      "baslik": "Çerez (Cookie) Onay Bildirimi Eksik",
+      "anahtar_kelimeler": [
+        "cookie",
+        "localStorage",
+        "sessionStorage",
+        "analytics",
+        "gtag",
+        "ga(",
+        "_gaq"
+      ],
+      "dosya_uzantilari": [".html", ".js", ".ts"],
+      "aciklama": "Çerez kullanan sitelerde kullanıcı onayı alınmalıdır.",
+      "mevzuat_maddesi": "6698 sayılı KVKK + Elektronik Ticaret Kanunu",
+      "duzeltme": "Cookie consent banner ekleyin, zorunlu olmayan çerezleri onay alınmadan yüklemeyin."
+    },
+    {
+      "id": "KVKK-004",
+      "kategori": "veri_silme",
+      "seviye": "uyari",
+      "baslik": "Veri Silme/Unutulma Hakkı Mekanizması Eksik",
+      "anahtar_kelimeler": [
+        "delete_user",
+        "user_delete",
+        "remove_account",
+        "hesap_sil"
+      ],
+      "dosya_uzantilari": [".py", ".js", ".ts"],
+      "aciklama": "Kullanıcıların verilerini silme hakkını kullanabileceği bir mekanizma olmalıdır.",
+      "mevzuat_maddesi": "6698 sayılı KVKK md.11/1-e",
+      "duzeltme": "Hesap silme / veri silme talebi için form veya API endpoint oluşturun."
+    }
+  ]
+}

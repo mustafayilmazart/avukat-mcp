@@ -1,0 +1,161 @@
+{
+  "_aciklama": "Bu dosya AB GDPR (General Data Protection Regulation - 2016/679 sayılı Tüzük) kapsamındaki veri koruma kurallarını içerir. AB pazarına hizmet veren tüm şirketler için geçerlidir.",
+  "meta": {
+    "ad": "GDPR - AB Genel Veri Koruma Tüzüğü",
+    "aciklama": "Avrupa Birliği vatandaşlarının kişisel verilerini koruyan GDPR (2016/679) kapsamındaki uyumluluk kuralları. AB'deki kullanıcılara hizmet veren tüm şirketler için geçerlidir.",
+    "ulke": "GLOBAL",
+    "mevzuat": "AB 2016/679 - General Data Protection Regulation",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "GDPR-001",
+      "baslik": "Geçerli Rıza (Consent) Mekanizması",
+      "seviye": "kritik",
+      "aciklama": "Rıza; özgür, belirli, bilgilendirilmiş ve açık olmalıdır. Önceden işaretli kutucuklar, sessiz onay veya paket rıza geçersizdir. Rıza her zaman geri alınabilir olmalıdır.",
+      "kontrol_desenleri": [
+        "consent",
+        "rıza",
+        "gdpr consent",
+        "opt-in",
+        "checkbox",
+        "agree",
+        "accept"
+      ],
+      "dosya_desenleri": ["*.html", "*.js", "*.jsx", "*.tsx", "*.php", "*.py"],
+      "mevzuat_referans": "GDPR/md.7",
+      "duzeltme_onerisi": "Her işleme amacı için ayrı, önceden işaretlenmemiş checkbox kullanın. Rıza metnini açık dille yazın. Rıza çekme fonksiyonu ekleyin ve çekme geçmişini saklayın."
+    },
+    {
+      "id": "GDPR-002",
+      "baslik": "Gizlilik Politikası (Privacy Policy) Zorunluluğu",
+      "seviye": "kritik",
+      "aciklama": "Veri işleme faaliyetleri hakkında şeffaf, erişilebilir ve anlaşılır bir gizlilik politikası yayınlanması zorunludur. Politika; kim olduğunuzu, hangi verileri topladığınızı, neden ve nasıl kullandığınızı açıklamalıdır.",
+      "kontrol_desenleri": [
+        "privacy policy",
+        "gizlilik politikası",
+        "privacy notice",
+        "data policy"
+      ],
+      "dosya_desenleri": ["*.html", "*.md", "*.txt"],
+      "mevzuat_referans": "GDPR/md.13-14",
+      "duzeltme_onerisi": "Tüm veri işleme faaliyetlerini kapsayan güncel bir gizlilik politikası hazırlayın. Politikayı web sitesinin footer bölümüne erişilebilir şekilde ekleyin."
+    },
+    {
+      "id": "GDPR-003",
+      "baslik": "Unutulma Hakkı (Right to be Forgotten)",
+      "seviye": "yüksek",
+      "aciklama": "Kullanıcılar kişisel verilerinin silinmesini talep edebilir. Veri işlemenin hukuki dayanağı kalmadığında veya rıza geri çekildiğinde veriler silinmelidir.",
+      "kontrol_desenleri": [
+        "delete account",
+        "hesap sil",
+        "verilerimi sil",
+        "right to erasure",
+        "forgotten"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts", "*.sql", "*.php"],
+      "mevzuat_referans": "GDPR/md.17",
+      "duzeltme_onerisi": "Kullanıcı arayüzüne 'Hesabımı ve Verilerimi Sil' seçeneği ekleyin. Silme işlemi; veritabanı, yedekler ve bağlı sistemler dahil tüm kopyaları kapsamalıdır."
+    },
+    {
+      "id": "GDPR-004",
+      "baslik": "Veri Taşınabilirliği (Data Portability)",
+      "seviye": "orta",
+      "aciklama": "Kullanıcılar kendi verilerini makine okunabilir formatta (JSON, CSV vb.) talep edebilir ve başka bir servise aktarabilir.",
+      "kontrol_desenleri": [
+        "data export",
+        "veri dışa aktar",
+        "download my data",
+        "portability",
+        "data transfer"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts", "*.php"],
+      "mevzuat_referans": "GDPR/md.20",
+      "duzeltme_onerisi": "Kullanıcı paneline 'Verilerimi İndir' özelliği ekleyin. JSON veya CSV formatında makine okunabilir veri dışa aktarımı sağlayın."
+    },
+    {
+      "id": "GDPR-005",
+      "baslik": "Veri Koruma Görevlisi (DPO) Gereklilikleri",
+      "seviye": "yüksek",
+      "aciklama": "Kamu kurumları, büyük ölçekli veri işleyiciler veya hassas veri işleyen şirketler bir Veri Koruma Görevlisi (DPO) atamak zorundadır.",
+      "kontrol_desenleri": [
+        "DPO",
+        "veri koruma görevlisi",
+        "data protection officer",
+        "privacy officer"
+      ],
+      "dosya_desenleri": ["*.md", "*.txt", "README*"],
+      "mevzuat_referans": "GDPR/md.37-39",
+      "duzeltme_onerisi": "İşleme ölçeğinizi değerlendirin. DPO atama zorunluluğunuz varsa, bu kişinin iletişim bilgilerini gizlilik politikanızda ve denetim otoritesine bildirin."
+    },
+    {
+      "id": "GDPR-006",
+      "baslik": "Çerez (Cookie) Onay Zorunluluğu",
+      "seviye": "kritik",
+      "aciklama": "Zorunlu çerezler dışındaki tüm çerezler (analitik, pazarlama, fonksiyonel) için kullanıcının önceden onayı alınmalıdır. Çerez duvarı oluşturmak yasaktır.",
+      "kontrol_desenleri": [
+        "cookie",
+        "çerez",
+        "analytics",
+        "tracking",
+        "Google Analytics",
+        "Facebook Pixel",
+        "localStorage"
+      ],
+      "dosya_desenleri": ["*.html", "*.js", "*.jsx", "*.tsx"],
+      "mevzuat_referans": "GDPR/md.6 + ePrivacy Direktifi",
+      "duzeltme_onerisi": "Çerez onay banner'ı (cookie consent) ekleyin. Kategorilere göre onay alın (zorunlu/analitik/pazarlama). Onay verilmeden izleme scriptleri yüklenmemeli."
+    },
+    {
+      "id": "GDPR-007",
+      "baslik": "Sınır Ötesi Veri Aktarımı",
+      "seviye": "kritik",
+      "aciklama": "AB dışına veri aktarımı ancak: yeterlilik kararı olan ülkeler, Standart Sözleşme Maddeleri (SCCs) veya Bağlayıcı Şirket Kuralları (BCRs) kapsamında yapılabilir.",
+      "kontrol_desenleri": [
+        "data transfer",
+        "third country",
+        "US transfer",
+        "cloud provider",
+        "AWS",
+        "Azure",
+        "SCC",
+        "adequacy"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts", "*.env", "*.yaml"],
+      "mevzuat_referans": "GDPR/md.44-49",
+      "duzeltme_onerisi": "AB dışı sunucu kullanıyorsanız, uygun aktarım mekanizması (SCCs, adequacy decision) belirleyin. Gizlilik politikanızda aktarım yapılan ülkeleri ve mekanizmaları açıklayın."
+    },
+    {
+      "id": "GDPR-008",
+      "baslik": "Veri İhlali Bildirimi (72 Saat Kuralı)",
+      "seviye": "kritik",
+      "aciklama": "Güvenlik ihlali tespit edildiğinde 72 saat içinde denetim otoritesine (ilgili AB ülkesinin DPA'sı), etkilenen kişilere ise makul sürede bildirim yapılmalıdır.",
+      "kontrol_desenleri": [
+        "data breach",
+        "security incident",
+        "güvenlik ihlali",
+        "yetkisiz erişim",
+        "sızıntı"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts"],
+      "mevzuat_referans": "GDPR/md.33-34",
+      "duzeltme_onerisi": "İhlal müdahale prosedürü oluşturun. İhlal türünü, etkilenen veri kategorilerini ve alınan önlemleri raporlayın. Bağlı olduğunuz AB ülkesinin DPA'sına bildirin."
+    },
+    {
+      "id": "GDPR-009",
+      "baslik": "Tasarımda Gizlilik (Privacy by Design)",
+      "seviye": "yüksek",
+      "aciklama": "Sistemler en başından itibaren gizlilik gözetilerek tasarlanmalıdır. Veri minimizasyonu, varsayılan gizlilik ve amaca sınırlılık ilkeleri uygulanmalıdır.",
+      "kontrol_desenleri": [
+        "data minimization",
+        "veri minimizasyonu",
+        "default privacy",
+        "privacy by design",
+        "purpose limitation"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts", "*.sql"],
+      "mevzuat_referans": "GDPR/md.25",
+      "duzeltme_onerisi": "Sadece gerekli verileri toplayın. Varsayılan ayarları en gizlilik dostu şekilde yapılandırın. Gereksiz veri alanlarını formlardan kaldırın."
+    }
+  ]
+}

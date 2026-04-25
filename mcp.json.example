@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "avukat-mcp": {
+      "command": "python",
+      "args": ["/path/to/avukat-mcp/main.py"],
+      "env": {
+        "AVUKAT_MCP_PROJELER_KOK": "/path/to/your/projects"
+      }
+    }
+  }
+}

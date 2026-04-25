@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "ad": "Çocuk Verisi Koruma",
+    "aciklama": "COPPA (ABD) ve Türkiye çocuk veri koruma düzenlemeleri",
+    "ulke": "GLOBAL",
+    "mevzuat": "COPPA + 6698 sayılı KVKK + 5395 sayılı Çocuk Koruma Kanunu",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "COCUK-001",
+      "baslik": "Yaş Doğrulama Mekanizması",
+      "seviye": "kritik",
+      "aciklama": "13 yaş altı çocuklardan veri toplamak için ebeveyn onayı gerekir. Yaş doğrulama mekanizması olmalıdır.",
+      "kontrol_desenleri": [
+        "age",
+        "yas",
+        "birth",
+        "dogum",
+        "child",
+        "cocuk",
+        "minor",
+        "underage"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.jsx", "*.py"],
+      "mevzuat_referans": "COPPA Rule 16 CFR 312 + KVKK md.6",
+      "duzeltme_onerisi": "Kayıt formuna yaş doğrulama ekleyin. 13 yaş altı için ebeveyn onay mekanizması kurun."
+    },
+    {
+      "id": "COCUK-002",
+      "baslik": "Çocuk İçerik Platformu Ek Yükümlülükleri",
+      "seviye": "yuksek",
+      "aciklama": "Çocuklara yönelik uygulama/site ise ek veri koruma yükümlülükleri vardır.",
+      "kontrol_desenleri": [
+        "kids",
+        "children",
+        "cocuk",
+        "egitim",
+        "education",
+        "game",
+        "oyun"
+      ],
+      "dosya_desenleri": ["*.json", "*.html", "*.md"],
+      "mevzuat_referans": "COPPA + GDPR Art.8 + Dijital Hizmetler Kanunu",
+      "duzeltme_onerisi": "Çocuk odaklı uygulamalar için: minimal veri toplama, reklam kısıtlama, ebeveyn kontrol paneli ekleyin."
+    }
+  ]
+}

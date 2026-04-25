@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "ad": "İletişim ve Pazarlama Kuralları",
+    "aciklama": "CAN-SPAM, İYS (İleti Yönetim Sistemi) ve ticari iletişim izni kuralları",
+    "ulke": "GLOBAL",
+    "mevzuat": "6563 sayılı Kanun + İYS Yönetmeliği + CAN-SPAM Act",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "ILET-001",
+      "baslik": "Ticari İletişim İzni (İYS)",
+      "seviye": "kritik",
+      "aciklama": "Türkiye'de ticari e-posta/SMS göndermek için alıcının önceden onayı (opt-in) ve İYS kaydı gerekir.",
+      "kontrol_desenleri": [
+        "newsletter",
+        "bulten",
+        "subscribe",
+        "abone",
+        "email_list",
+        "mailing"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.py", "*.js"],
+      "mevzuat_referans": "6563/md.6 + Ticari İletişim ve Ticari Elektronik İletiler Hakkında Yönetmelik",
+      "duzeltme_onerisi": "E-posta toplama formlarına açık onay (opt-in) checkbox ekleyin. İYS'ye (iys.org.tr) kayıt olun."
+    },
+    {
+      "id": "ILET-002",
+      "baslik": "Abonelikten Çıkma (Unsubscribe)",
+      "seviye": "kritik",
+      "aciklama": "Her ticari e-postada görünür bir abonelikten çıkma linki olmalıdır.",
+      "kontrol_desenleri": [
+        "unsubscribe",
+        "abonelik iptal",
+        "opt-out",
+        "list-unsubscribe"
+      ],
+      "dosya_desenleri": ["*.html", "*.tsx", "*.py"],
+      "mevzuat_referans": "CAN-SPAM Act Sec.5(a)(3) + 6563/md.6",
+      "duzeltme_onerisi": "Tüm pazarlama e-postalarına tek tıkla abonelikten çıkma linki ekleyin."
+    },
+    {
+      "id": "ILET-003",
+      "baslik": "Gönderen Kimlik Bilgileri",
+      "seviye": "yuksek",
+      "aciklama": "Ticari e-postalarda gönderen kimliği (şirket adı, adres) açıkça belirtilmelidir.",
+      "kontrol_desenleri": ["from", "sender", "gonderen", "footer", "address"],
+      "dosya_desenleri": ["*.html"],
+      "mevzuat_referans": "CAN-SPAM Act Sec.5(a)(1) + 6563/md.5",
+      "duzeltme_onerisi": "E-posta footer'ına şirket adı, fiziksel adres ve iletişim bilgisi ekleyin."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Avukat MCP — üretilen raporlar ve önbellek (veri izleri içerir)
+data/raporlar/*
+!data/raporlar/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+
+# Müşteri / iç proje tarama scriptleri (kişisel kullanım, yayına dahil değil)
+scripts/tara_*.py
+scripts/*_private.py
+scripts/gorsel_*.py
+scripts/ters_arama*.py
+scripts/copytrack_*.py
+docs/*_private.md
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Dahili yapılandırmalar (kullanıcıya özel yollar içerir)
+.claude/
+mcp.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini

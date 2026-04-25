@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "ad": "Ödeme Güvenliği ve PCI-DSS",
+    "aciklama": "PCI-DSS, BDDK düzenlemeleri ve ödeme güvenlik kuralları",
+    "ulke": "GLOBAL",
+    "mevzuat": "PCI-DSS v4.0 + BDDK Ödeme Hizmetleri Yönetmeliği",
+    "guncelleme": "2026-03-30"
+  },
+  "kurallar": [
+    {
+      "id": "PCI-001",
+      "baslik": "Kart Bilgisi Saklanmamalı",
+      "seviye": "kritik",
+      "aciklama": "Kredi kartı numarası, CVV ve PIN bilgileri sunucuda saklanmamalıdır.",
+      "kontrol_desenleri": [
+        "card_number",
+        "credit_card",
+        "cvv",
+        "cvc",
+        "kart_no"
+      ],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts"],
+      "mevzuat_referans": "PCI-DSS Req.3.2",
+      "duzeltme_onerisi": "Kart bilgilerini asla saklamayın. Stripe/iyzico tokenization kullanın."
+    },
+    {
+      "id": "PCI-002",
+      "baslik": "SSL/TLS Zorunluluğu",
+      "seviye": "kritik",
+      "aciklama": "Ödeme işlemleri mutlaka HTTPS üzerinden yapılmalıdır.",
+      "kontrol_desenleri": ["https", "ssl", "tls", "certificate"],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts", "*.env"],
+      "mevzuat_referans": "PCI-DSS Req.4.1",
+      "duzeltme_onerisi": "SSL sertifikası yükleyin. Tüm ödeme trafiğini HTTPS üzerinden yönlendirin."
+    },
+    {
+      "id": "PCI-003",
+      "baslik": "3D Secure Zorunluluğu",
+      "seviye": "yuksek",
+      "aciklama": "Türkiye'de online kartlı ödemelerde 3D Secure zorunludur.",
+      "kontrol_desenleri": ["3d_secure", "3ds", "three_d_secure"],
+      "dosya_desenleri": ["*.py", "*.js", "*.ts"],
+      "mevzuat_referans": "BDDK Düzenlemesi + TCMB Ödeme Sistemleri",
+      "duzeltme_onerisi": "Ödeme entegrasyonunuzda 3D Secure'u etkinleştirin."
+    }
+  ]
+}
