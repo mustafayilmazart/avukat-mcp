@@ -7,9 +7,12 @@ projeleri tarar, Türkiye kanunları (KVKK, TTK, e-ticaret) ve uluslararası mev
 
 Kurulum:
   git clone https://github.com/mustafayilmazart/kesif-avukat-mcp
-  cd avukat-mcp
-  uv venv && .venv/bin/activate  # Windows: .venv\\Scripts\\activate
-  uv add "mcp[cli]" httpx beautifulsoup4 aiofiles
+  cd kesif-avukat-mcp
+  uv sync
+  # veya pip ile:
+  # python -m venv .venv && source .venv/bin/activate  (Linux/Mac)
+  # python -m venv .venv && .venv\\Scripts\\activate    (Windows)
+  # pip install -e .
 
 Çalıştırma:
   python src/server.py

@@ -47,7 +47,7 @@ Türkiye'de bir yazılım projesi geliştirirken **KVKK aydınlatma metni**, **�
 
 ```bash
 git clone https://github.com/mustafayilmazart/kesif-avukat-mcp
-cd avukat-mcp
+cd kesif-avukat-mcp
 uv sync
 # veya:
 pip install -e .

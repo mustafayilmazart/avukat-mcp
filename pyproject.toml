@@ -3,7 +3,7 @@ name = "avukat-mcp"
 version = "1.0.0"
 description = "Türkiye ve uluslararası hukuki uyumluluk (KVKK, GDPR, E-Ticaret, PCI-DSS, COPPA, FSEK) MCP sunucusu"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
     { name = "KEŞİF Ekosistem" },
