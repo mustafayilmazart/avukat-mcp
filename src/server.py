@@ -6,7 +6,7 @@ projeleri tarar, Türkiye kanunları (KVKK, TTK, e-ticaret) ve uluslararası mev
 (GDPR, CCPA, DMCA, PCI-DSS, COPPA, CAN-SPAM) kapsamında hukuki uyumluluk kontrolü yapar.
 
 Kurulum:
-  git clone https://github.com/mustafayilmazart/avukat-mcp
+  git clone https://github.com/mustafayilmazart/kesif-avukat-mcp
   cd avukat-mcp
   uv venv && .venv/bin/activate  # Windows: .venv\\Scripts\\activate
   uv add "mcp[cli]" httpx beautifulsoup4 aiofiles

@@ -56,4 +56,4 @@ Bu sitelerin içeriği kamu malıdır (kanun metinleri telif kapsamı dışında
 
 Tüm bağımlılıklar MIT, BSD, Apache 2.0 gibi **permissive** lisanslara sahiptir. Bu projeyi MIT lisansıyla yeniden dağıtmak için herhangi bir engel bulunmamaktadır.
 
-Eğer atıf eksik bıraktığımız bir kaynak varsa lütfen [issue açın](https://github.com/mustafayilmazart/avukat-mcp/issues).
+Eğer atıf eksik bıraktığımız bir kaynak varsa lütfen [issue açın](https://github.com/mustafayilmazart/kesif-avukat-mcp/issues).
