@@ -86,7 +86,7 @@ _guncelleyici = KuralGuncelleyici(KURALLAR_DIR, _onbellek, _scraper)
 # ─── YARDIMCI FONKSİYONLAR ─────────────────────────────────────────
 
 def _projeleri_listele() -> list[str]:
-    """D:\\0 altındaki proje dizinlerini listeler"""
+    """PROJELER_KOK altındaki proje dizinlerini listeler"""
     if not PROJELER_KOK.exists():
         return []
     projeler = []
