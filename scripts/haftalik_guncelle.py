@@ -9,7 +9,7 @@ Kullanım:
 
 Task Scheduler örnek komut:
     schtasks /create /tn "Avukat-MCP-Haftalik" /sc WEEKLY /d SUN /st 03:00 ^
-      /tr "D:\0\000MCP-Servers\avukat-mcp\.venv\Scripts\python.exe D:\0\000MCP-Servers\avukat-mcp\scripts\haftalik_guncelle.py"
+      f'/tr "\"{os.path.join(VENV_YOLU, "Scripts", "python.exe")}\" \"{os.path.abspath(__file__)}\""'
 """
 
 from __future__ import annotations

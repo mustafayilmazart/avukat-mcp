@@ -16,7 +16,7 @@ from typing import Any, Optional
 logger = logging.getLogger("avukat-mcp.kopru")
 
 # KEŞİF registry'sinde mevzuat-mcp için beklenen konum
-VARSAYILAN_MEVZUAT_MCP_YOLU = Path(r"D:\0\000MCP-Servers\mevzuat-mcp\server.py")
+VARSAYILAN_MEVZUAT_MCP_YOLU = Path.home() / "projects" / "mevzuat-mcp" / "server.py"
 
 
 @dataclass

@@ -3,7 +3,7 @@
 > **Türkiye ve uluslararası hukuki uyumluluk tarayıcısı — Model Context Protocol (MCP) sunucusu.**
 > *Turkey-focused legal compliance scanner for software projects, exposed via MCP.*
 
-`D:\0` (veya istediğiniz herhangi bir kök dizin) altındaki tüm yazılım projelerini **KVKK, GDPR, E-Ticaret Kanunu, PCI-DSS, COPPA, FSEK, CAN-SPAM, İYS** mevzuatı çerçevesinde tarar; hukuki riskleri tespit eder, somut düzeltme önerileri sunar.
+`~/projects` (veya istediğiniz herhangi bir kök dizin) altındaki tüm yazılım projelerini **KVKK, GDPR, E-Ticaret Kanunu, PCI-DSS, COPPA, FSEK, CAN-SPAM, İYS** mevzuatı çerçevesinde tarar; hukuki riskleri tespit eder, somut düzeltme önerileri sunar.
 
 [![Made with MCP](https://img.shields.io/badge/MCP-Server-blueviolet)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

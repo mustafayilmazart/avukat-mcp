@@ -97,7 +97,7 @@ python scripts/gorsel_degistir_cli.py --apply --onay hepsi
 python scripts/gorsel_degistir_cli.py --rollback son
 
 # Belirli bir oturumu
-python scripts/gorsel_degistir_cli.py --rollback D:\0\000MCP-Servers\avukat-mcp\data\yedekler\20260423_111500
+python scripts/gorsel_degistir_cli.py --rollback ~/projects/avukat-mcp/data/yedekler/20260423_111500
 ```
 
 ## İş Akışı (Değiştirme)
