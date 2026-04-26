@@ -60,8 +60,12 @@ from mcp.server.fastmcp import FastMCP
 
 mcp = FastMCP("avukat-mcp")
 
-# D:\0 altındaki tüm projelerin kök dizini (ortam değişkeniyle override edilebilir)
-PROJELER_KOK = Path(os.environ.get("AVUKAT_MCP_PROJELER_KOK", r"D:\0"))
+# Projeler kök dizini — kullanıcı kendi yolunu AVUKAT_MCP_PROJELER_KOK env var ile vermeli
+# Default: home directory altında "projects" — taşınabilir
+PROJELER_KOK = Path(os.environ.get(
+    "AVUKAT_MCP_PROJELER_KOK",
+    str(Path.home() / "projects")
+))
 
 # Taranmayacak dizinler (proje değil, yardımcı klasörler)
 ATLANAN_PROJELER = {
