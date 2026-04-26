@@ -3,7 +3,7 @@
 ## Reporting a Vulnerability / Güvenlik Açığı Bildirimi
 
 **English:**
-If you discover a security vulnerability, please **do not** open a public issue. Instead, email **medya@kesif.org** with:
+If you discover a security vulnerability, please **do not** open a public issue. Instead, email **bilgi@mustafayilmaz.art** with:
 - Description of the vulnerability
 - Steps to reproduce
 - Affected version(s)
@@ -12,7 +12,7 @@ If you discover a security vulnerability, please **do not** open a public issue.
 We will acknowledge within **72 hours** and aim to release a fix within **14 days** for critical issues.
 
 **Türkçe:**
-Bir güvenlik açığı bulduysanız, **lütfen herkese açık bir issue açmayın**. Bunun yerine **medya@kesif.org** adresine şunları içeren bir e-posta gönderin:
+Bir güvenlik açığı bulduysanız, **lütfen herkese açık bir issue açmayın**. Bunun yerine **bilgi@mustafayilmaz.art** adresine şunları içeren bir e-posta gönderin:
 - Açığın tanımı
 - Tekrar üretme adımları
 - Etkilenen sürüm(ler)
