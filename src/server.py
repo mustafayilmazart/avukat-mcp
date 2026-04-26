@@ -1,13 +1,14 @@
 """
 Avukat MCP — Hukuki Uyumluluk Tarama ve Raporlama Sunucusu
 ============================================================
-Tüm D:\\0 altındaki projeleri tarar, Türkiye kanunları (KVKK, TTK, e-ticaret)
-ve uluslararası mevzuat (GDPR, CCPA, DMCA, PCI-DSS, COPPA, CAN-SPAM)
-kapsamında hukuki uyumluluk kontrolü yapar.
+~/projects (veya AVUKAT_MCP_PROJELER_KOK env var ile belirlenen dizin) altındaki
+projeleri tarar, Türkiye kanunları (KVKK, TTK, e-ticaret) ve uluslararası mevzuat
+(GDPR, CCPA, DMCA, PCI-DSS, COPPA, CAN-SPAM) kapsamında hukuki uyumluluk kontrolü yapar.
 
 Kurulum:
-  cd D:\\0\\000MCP-Servers\\avukat-mcp
-  uv venv && .venv\\Scripts\\activate
+  git clone https://github.com/mustafayilmazart/avukat-mcp
+  cd avukat-mcp
+  uv venv && .venv/bin/activate  # Windows: .venv\\Scripts\\activate
   uv add "mcp[cli]" httpx beautifulsoup4 aiofiles
 
 Çalıştırma:
@@ -225,7 +226,7 @@ def _kategoriye_gore_filtrele(bulgular: list[dict], anahtarlar: list[str], mevzu
 @mcp.tool()
 async def proje_tara(proje_yolu: str) -> str:
     """Tek bir projeyi tarar ve hukuki sorunları tespit eder.
-    proje_yolu: Proje dizin yolu (örn: D:\\0\\Python-KesifPortal)
+    proje_yolu: Proje dizin yolu (örn: ~/projects/Python-MyProject veya /absolute/path)
     """
     yol = Path(proje_yolu)
     if not yol.exists():
@@ -246,7 +247,7 @@ async def proje_tara(proje_yolu: str) -> str:
 
 @mcp.tool()
 async def tum_projeleri_tara() -> str:
-    """D:\\0 altındaki tüm projeleri tarar ve hukuki uyumluluk özetini döndürür."""
+    """AVUKAT_MCP_PROJELER_KOK altındaki tüm projeleri tarar ve hukuki uyumluluk özetini döndürür."""
     projeler = _projeleri_listele()
     logger.info(f"{len(projeler)} proje taranacak")
 
